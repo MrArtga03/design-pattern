@@ -12,15 +12,5 @@ namespace ClassLibrary
         {
             return "Display " + this.GetType();
         }
-
-        public string Fly()
-        {
-            return "Fly RedheadDuck!";
-        }
-
-        public string Quack()
-        {
-            return "Quack RedheadDuck!";
-        }
     }
 }
