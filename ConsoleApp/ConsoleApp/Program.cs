@@ -11,8 +11,8 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Duck mallardDuck = new MallardDuck();
-            Duck redheadDuck = new RedheadDuck();
+            MallardDuck mallardDuck = new MallardDuck();
+            RedheadDuck redheadDuck = new RedheadDuck();
 
             Duck[] ducks = new Duck[] { mallardDuck, redheadDuck };
 
@@ -20,8 +20,10 @@ namespace ConsoleApp
             {
                 Console.WriteLine(ducks[i].Display());
                 Console.WriteLine(ducks[i].Swim());
-                Console.WriteLine(ducks[i].Quack());
             }
+
+            RubberDuck rubberDuck = new RubberDuck();
+            Console.WriteLine(rubberDuck.Quack());
 
             Console.ReadKey();
         }

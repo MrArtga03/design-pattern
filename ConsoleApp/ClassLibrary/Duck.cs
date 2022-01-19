@@ -8,11 +8,6 @@ namespace ClassLibrary
 {
     abstract public class Duck
     {
-        public string Quack()
-        {
-            return "Swim " + this.GetType();
-        }
-
         public string Swim()
         {
             return "Swim " + this.GetType();

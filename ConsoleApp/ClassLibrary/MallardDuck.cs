@@ -6,11 +6,21 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class RedheadDuck : Duck
+    public class MallardDuck : Duck, Flyable, Quackable
     {
         public override string Display()
         {
             return "Display " + this.GetType();
+        }
+
+        public string Fly()
+        {
+            return "Fly MallardDuck!";
+        }
+
+        public string Quack()
+        {
+            return "Quack MallardDuck!";
         }
     }
 }

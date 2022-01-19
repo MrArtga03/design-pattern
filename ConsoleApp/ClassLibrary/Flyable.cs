@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class MallardDuck : Duck
+    interface Flyable
     {
-        public override string Display()
-        {
-            return "Display " + this.GetType();
-        }
+        string Fly();
     }
 }
