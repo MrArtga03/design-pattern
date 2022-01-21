@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class RedheadDuck : Duck, Flyable, Quackable
+    public class RedheadDuck : Duck, IFlyable, IQuackable
     {
         public override string Display()
         {
