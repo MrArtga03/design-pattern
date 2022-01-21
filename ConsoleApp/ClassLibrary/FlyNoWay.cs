@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public interface IFlyable
+    class FlyNoWay : IFlyBehavior
     {
-        string Fly();
+        public string Fly()
+        {
+            return "";
+        }
     }
 }

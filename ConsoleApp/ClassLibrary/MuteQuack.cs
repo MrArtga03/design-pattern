@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class RedheadDuck : Duck
+    class MuteQuack : IQuackBehavior
     {
-        public RedheadDuck()
+        public string Quack()
         {
-            flyBehavior = new FlyWithWings();
-            quackBehavior = new DQuack();
+            return "";
         }
     }
 }
