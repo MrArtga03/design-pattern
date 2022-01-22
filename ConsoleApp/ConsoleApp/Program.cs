@@ -17,7 +17,12 @@ namespace ConsoleApp
             RubberDuck rubberDuck = new RubberDuck();
             DecoyDuck decoyDuck = new DecoyDuck();
 
-            
+            IFlyBehavior flyNoWay = new FlyNoWay();
+            IQuackBehavior muteQuack = new MuteQuack();
+
+            redheadDuck.SetFlyBehavior(flyNoWay);
+            redheadDuck.SetQuackBehavior(muteQuack);
+
             Duck[] ducks = new Duck[] { 
                 mallardDuck, 
                 redheadDuck,
